@@ -4,7 +4,7 @@ const HeaderComponent = () => {
     <div>
         <header>
             <nav className='navbar navbar-dark bg-dark'>
-                <a className="navbar-brand" href="https://wwww.javaguides.net">Employee Management System</a>
+                <a className="navbar-brand" href="#">Employee Management System</a>
             </nav>
         </header>
 
