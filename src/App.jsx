@@ -12,7 +12,7 @@ function App() {
         <HeaderComponent />
         
         <Routes>
-          <Route path='/' element={<ListEmployeeComponent />} />
+          <Route path='/employee-frontend/' element={<ListEmployeeComponent />} />
           <Route path='/employees' element={<ListEmployeeComponent />} />
           <Route path='/add-employee' element={<EmployeeComponent />} />
           <Route path='/edit-employee/:id' element={<EmployeeComponent />} />
