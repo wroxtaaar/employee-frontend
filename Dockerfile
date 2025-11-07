@@ -8,7 +8,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# ===== Run Stage =====
+# ===== Run Stage (Nginx) =====
 FROM nginx:alpine
 
 COPY --from=build /app/dist /usr/share/nginx/html
