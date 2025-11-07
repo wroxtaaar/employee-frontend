@@ -2,7 +2,7 @@ import axios from "axios";
 
 const REST_API_BASE_URL =
   import.meta.env.VITE_API_URL ||
-  "http://localhost:8080/api/employees";  
+  "https://employee-backend-9cgj.onrender.com/api/employees";  
 
 export const listEmployees = () => axios.get(REST_API_BASE_URL);
 
