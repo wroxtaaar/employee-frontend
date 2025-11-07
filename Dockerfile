@@ -11,7 +11,10 @@ RUN npm run build
 # ===== Run Stage (Nginx) =====
 FROM nginx:alpine
 
+# ✅ Copy build output from previous stage
 COPY --from=build /app/dist /usr/share/nginx/html
+
+# ✅ Ensure nginx.conf exists in same folder as Dockerfile
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
