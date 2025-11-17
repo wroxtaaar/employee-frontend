@@ -47,3 +47,19 @@ git clone https://github.com/wroxtaaar/employee-frontend.git
 cd employee-frontend
 npm install
 npm run dev
+
+
+Make sure to update your API base URL in the appropriate config file (for example `src/config.js` or environment variables) so the frontend can communicate with the backend.
+
+---
+
+### ⚙️ Build & Docker
+
+```bash
+npm run build
+
+# Build Docker image
+docker build -t employee-frontend:latest .
+
+# Run the container
+docker run -d -p 3000:3000 employee-frontend:latest
