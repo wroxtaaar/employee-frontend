@@ -67,4 +67,13 @@ docker build -t employee-frontend:latest .
 # Run the container
 docker run -d -p 3000:3000 employee-frontend:latest
 
+```
+
+##📎 Repository & Links
+
+Frontend Repo: https://github.com/wroxtaaar/employee-frontend
+Backend Repo: https://github.com/wroxtaaar/employee-backend
+Live Demo: https://employee-frontend-1-oocj.onrender.com/employees
+
+
 
